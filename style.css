@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Hasan;
+}
+@font-face {
+    font-family:Hasan;
+    src: url(./font/Helvetica.ttf);
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+img{
+    max-width: 100%;
+}
+.mid_content{
+    width: 1200px;
+    margin: auto;
+}
+.btn-dark{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 12px;
+    font-weight: 600;
+    transition: .6s;
+}
+.btn-dark:hover{
+    background:white;
+    color: black;
+    border: 1px solid black;
+}
+.btn-light{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn-light:hover{
+    color: white;
+    background: #000;
+}
+/* header */
+header{
+    background: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+/* logo */
+header .logo .image{
+    margin-top: 10px;
+}
+header .logo img{
+    width: 80px;
+}
+
+/* Menu */
+
+header .menu ul{
+    text-align: right;
+}
+header .menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+header .menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    font-weight: 600;
+    padding: 0 0 0 40px;
+    transition: .6s;
+}
+header .menu ul li:hover > a{
+    text-decoration: underline;
+}
+
+/* Drop Down Part */
+
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    text-align: left;
+    left: 0;
+    top: 110%;
+    border-top: 5px solid white;
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
+    line-height: normal;
+    padding: 20px;
+}
+.menu ul li ul li:hover a{
+    background-color: white;
+    color: black;
+
+}
+
+/* Drop Down Hover Part */
+.menu ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+.menu ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+/* slider_section */
+
+.slider_section{
+    margin-top: 70px;
+    padding: 200px 0;
+    background: url(./Image/a0c6042d4612d7adf44692fffac7e082.jpg) no-repeat top center;
+    background-size: cover;
+}
+.slider_section p{
+    padding: 20px 0;
+    font-weight: 900;
+}
+.slider_section h1{
+    font-weight: 900;
+}
+
+/* About Section */
+.about_section{
+    padding: 50px 0;
+    background: #87A471;
+    color: white;
+}
+.about_section .mid_content{
+    width: 1100px;
+}
+.about_section h1,.skil_section h1{
+    padding: 0 0 10px 0;
+    margin:0 auto;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: rgb(225, 225, 225);
+    border-bottom: 2px solid rgb(252, 252, 252);
+    text-shadow: 4px 0 4px rgba(232, 227, 227, 0.652);
+    display: inline-block;
+}
+.about_section .text{
+    width: 65%;
+    margin-top: 80px;
+}
+.about_section .text p{
+    line-height: 26px;
+    padding-right: 100px;
+}
+.about_section .image{
+    width: 35%;
+}
+
+/* Sikl Section */
+
+.skil_section{
+    padding: 50px 0;
+    background: #606A64;
+    text-align: center;
+    color: white;
+}
+.skil_section h1{
+    padding: 10px 15px;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.skil_section .mid_content{
+    max-width: 1300px;
+}
+
+/* skil info */
+
+.skil_section .skill_info{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.skil_section .skill_info h2{
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.skil_section .skill_info p{
+    color: rgb(211, 211, 211);
+    font-size: 17px;
+    line-height: 26px;
+}
+.skil_section .skil{
+    width: 27%;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 3%;
+}
+.skil_section .skil .icon{
+    width: 20%;
+}
+.skil_section .skil .icon img{
+    width: 50px;
+}
+
+.skil_section .skil .text{
+    width: 75%;
+}
+.skil_section .skil .text h2{
+    color: rgba(0, 0, 0, 0.755);
+}
+.skil_section .skil .text p{
+    color: rgb(128, 128, 128);
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+/* Latest work section */
+
+.latest_work_section{
+    padding: 100px 0;
+    background: #87A471;
+}
+.latest_work_section .mid_content{
+    width: 1400;
+}
+
+/* Work info */
+
+.latest_work_section .work_info{
+    text-align: center;
+    color: white;
+}
+.latest_work_section .work_info h2{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 30px;
+}
+.latest_work_section .work_info p{
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+/* Work card */
+
+.latest_work_section .work_card .card{
+    width: 46%;
+    margin: 0 1.5%;
+    text-align: center;
+    border: 1px solid rgb(199, 199, 199);
+}
+.latest_work_section .work_card img{
+    width: 100%;
+}
+.latest_work_section .work_card .text{
+    padding-bottom: 20px;
+}
+.latest_work_section .work_card .text p{
+    padding: 20px;
+    color: #536166;
+    font-size: 22px;
+    font-weight: 600;
+}
+.latest_work_section .work_card .text h5{
+    color: white;
+}
+
+/* box */
+
+.latest_work_section .work_card .box{
+    width: 22%;
+    margin: 0 1.5%;
+    margin-top: 50px;
+}
+
+/* team Section */
+
+.team_section{
+    padding: 60px 0;
+    background: #5B9776;
+    color: white;
+}
+.team_section .team_header{
+    text-align: center;
+}
+.team_section .team_header h1{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+.team_section .team_header h1::after{
+    content: '';
+    height: 2px;
+    width: 74%;
+    position: absolute;
+    left: 13%;
+    top: 130%;
+    background-color: white;
+}
+
+/* Team member */
+
+.team_member{
+    width: 30%;
+    margin: 0 1.5%;
+}
+.team_member .image{
+    width: 100%;
+}
+.team_member .image img{
+    width: 100%;
+}
+.team_member .menu{
+    margin-top: 15px;
+}
+.team_member .menu ul{
+    list-style: none;
+    text-align: center;
+}
+.team_member .menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.team_member .menu ul li a{
+    display: inline-block;
+    padding: 0 15px;
+    color: white;
+    font-size: 45px;
+    transition: .3s;
+}
+.team_member .menu ul li a:hover{
+    color: #606A64;
+}
+
+/* advantage Section */
+
+.advantage_section{
+    padding: 130px 0;
+    background-color: #606A64;
+    color: white;
+    text-align: center;
+}
+.advantage_section .mid_content{
+    width: 900px !important;
+}
+.advantage_section h1{
+    font-size: 40px;
+}
+.advantage_section p{
+    margin: 25px 0;
+    line-height: 30px;
+}
+.advantage_section .btn-light{
+    background-color: #00BC9C;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.advantage_section .btn-light:hover{
+    background-color: #4C6879;
+}
+
+/* Footer Section */
+
+.footer_section{
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: #000;
+}
+.footer_section a{
+    color: rgb(255, 132, 0);
+    font-weight: 900;
+    text-decoration: none;
+    position: relative;
+}
+.footer_section a::after{
+    content: 'If you click here you will see my Facebook account.';
+    position: absolute;
+    right: -200%;
+    bottom: 310%;
+    color: White;
+    background-color: rgb(255, 0, 0);
+    width: 600%;
+    height: 0px;
+    line-height: 60px;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.footer_section p:hover a::after{
+    height: 60px;
+    visibility: visible;
+    opacity: 1;
+    transition:ease-in .4s;
+}
+
+.footer_section a::before{
+    content:'' ;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    border-style: solid;
+    border-width: 0px 14px 0 14px;
+    border-color: #ff0000 transparent transparent transparent;
+}
+.footer_section p:hover a::before{
+    border-width: 50px 14px 0 14px;
+    transition: .6s;
+
+}
